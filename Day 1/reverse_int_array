@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/* Function to reverse arr[] from start to end*/
+// Function to reverse p[] from start to end
 void rvereseArray(int p[], int start, int end)
 {
 	while (start < end)
@@ -14,7 +14,7 @@ void rvereseArray(int p[], int start, int end)
 	}
 }	
 
-/* Utility function to print an array */
+// function to print an array
 void printArray(int p[], int Q)
 {
 for (int i = 0; i < Q; i++)
@@ -23,7 +23,7 @@ cout << p[i] << " ";
 cout << endl;
 }
 
-/* Driver function to test above functions */
+// Driver function
 int main()
 {
 	int p[10000];
@@ -44,7 +44,7 @@ int main()
 	
 	cout << "Reversed array is" << endl;
 	
-	// To print the Reversed array
+	// print the Reversed array
 	printArray(p, Q);
 	
 	return 0;
