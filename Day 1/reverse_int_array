@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+/* Function to reverse arr[] from start to end*/
+void rvereseArray(int p[], int start, int end)
+{
+	while (start < end)
+	{
+		int temp = p[start];
+		p[start] = p[end];
+		p[end] = temp;
+		start++;
+		end--;
+	}
+}	
+
+/* Utility function to print an array */
+void printArray(int p[], int Q)
+{
+for (int i = 0; i < Q; i++)
+cout << p[i] << " ";
+
+cout << endl;
+}
+
+/* Driver function to test above functions */
+int main()
+{
+	int p[10000];
+	
+	int Q;
+
+	cout<<"Enter n";
+	cin>>Q;
+	
+	cout<<"enter original array";
+	for(int i=0; i<Q;i++)
+	{
+	    cin>>p[i];
+	}
+	
+	// Function calling
+	rvereseArray(p, 0, Q-1);
+	
+	cout << "Reversed array is" << endl;
+	
+	// To print the Reversed array
+	printArray(p, Q);
+	
+	return 0;
+}
